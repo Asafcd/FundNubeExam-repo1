@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+   web2:
+      build: .
+      container_name: web2
+      volumes:
+      - ./app:/var/www/html
+      ports:
+      - 5000:80

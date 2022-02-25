@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+      image: mariadb:10.7.1
+      container_name: cont_clasedb   
+      volumes:
+         - ./db:/var/lib/mysql
+         - ./db_config:/etc/mysql/conf.d
+      environment:
+         - MYSQL_ROOT_PASSWORD=Venado86
+      ports:
+         - 3333:3306

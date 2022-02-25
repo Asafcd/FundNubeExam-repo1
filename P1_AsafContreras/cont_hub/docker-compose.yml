@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web1:
+    image: webdevops/php-apache
+    #image: php:7.3-apache
+    container_name: web1
+    volumes:
+         - ./app:/app
+    ports:
+         - 82:80
+      
